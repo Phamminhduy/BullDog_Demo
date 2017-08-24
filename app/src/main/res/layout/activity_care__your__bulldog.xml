@@ -9,13 +9,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="194dp"
-        android:background="@drawable/background_header"
+        android:background="@drawable/cover_avatar"
         android:id="@+id/relativeLayout"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true">
 
         <ImageView
-            android:src="@drawable/avatar_bulldog"
+            android:src="@drawable/avatar"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginStart="67dp"
@@ -40,7 +40,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="33dp"
-            android:src="@drawable/health_icon"
+            app:srcCompat="@drawable/ic_love"
             android:layout_alignTop="@+id/imageView"
             android:layout_toStartOf="@+id/textView6" />
 
@@ -75,10 +75,9 @@
         android:id="@+id/btnHealth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="13dp"
-        android:background="@drawable/health_backgroung"
-        android:layout_below="@+id/relativeLayout"
+        android:background="@drawable/heatlth"
+        android:layout_marginStart="44dp"
+        android:layout_centerVertical="true"
         android:layout_alignParentStart="true" />
 
     <Button
@@ -86,8 +85,8 @@
         android:id="@+id/btnGallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/gallery_background"
-        android:layout_marginStart="19dp"
+        android:background="@drawable/gallery"
+        android:layout_marginStart="17dp"
         android:layout_alignBaseline="@+id/btnHealth"
         android:layout_alignBottom="@+id/btnHealth"
         android:layout_toEndOf="@+id/btnHealth" />
@@ -96,7 +95,7 @@
         android:id="@+id/btnReminder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/reminder_background"
+        android:background="@drawable/reminder"
         android:layout_below="@+id/btnHealth"
         android:layout_alignStart="@+id/btnHealth"
         android:layout_marginTop="10dp" />
@@ -106,8 +105,8 @@
         android:id="@+id/btnDetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/btnGallery"
+        android:background="@drawable/detail"
         android:layout_alignTop="@+id/btnReminder"
-        android:background="@drawable/details_background" />
+        android:layout_alignStart="@+id/btnGallery" />
 
 </RelativeLayout>
